@@ -2382,8 +2382,8 @@ static struct cfg80211_ops CFG80211_Ops = {
 #endif /* LINUX_VERSION_CODE: 3.6.0 */
 
 	/* change type/configuration of virtual interface */
-	.change_virtual_intf	= CFG80211_OpsVirtualInfChg,
-	.add_virtual_intf	= CFG80211_OpsVirtualInfAdd,
+//	.change_virtual_intf	= CFG80211_OpsVirtualInfChg,
+//	.add_virtual_intf	= CFG80211_OpsVirtualInfAdd,
 	.del_virtual_intf	= CFG80211_OpsVirtualInfDel,
 
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(3,6,0))

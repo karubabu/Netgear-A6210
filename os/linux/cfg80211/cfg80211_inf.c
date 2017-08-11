@@ -549,7 +549,7 @@ void RTMP_CFG80211_VirtualIF_Init(void *pAdSrc, CHAR *pDevName, UINT32 DevType)
 				RTMP_OS_NETDEV_GET_DEVNAME(new_dev_p)));
 	}
 
-	new_dev_p->destructor = free_netdev;
+	new_dev_p->priv_destructor = free_netdev;
 	RtmpOsSetNetDevPriv(new_dev_p, pAd);
 	NdisMoveMemory(&pNetDevOps->devAddr[0], &pAd->CurrentAddress[0], MAC_ADDR_LEN);
 
